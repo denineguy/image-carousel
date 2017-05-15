@@ -1,0 +1,87 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+}
+
+.thumbnails {
+  height: 450px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  height: 20%;
+  margin-top: 10px;
+  opacity: .7;
+  transition: opacity .5s ease;
+  -webkit-transition: opacity .5s ease;
+  width: 19.5%;
+}
+
+label:hover {
+  opacity: 1;
+  transition: opacity .5s ease;
+  -webkit-transition: opacity .5s ease;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.full-image {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  left: 100%;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  transition: all 0s ease 390ms;
+  -webkit-transition: all 0s ease 390ms;
+  width: 100%;
+  z-index: 10;
+}
+
+input[type=radio]:checked + .full-image {
+  left: 0;
+  opacity: 1;
+  top: 0;
+  transition: all 400ms ease-out;
+  -webkit-transition: all 400ms ease-out;
+  z-index: 100;
+}
+
+.image-one {
+  background-image: url("https://static.pexels.com/photos/24353/pexels-photo.jpg");
+}
+
+.image-two {
+  background-image: url("https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg");
+}
+
+.image-three {
+  background-image: url("https://static.pexels.com/photos/26796/pexels-photo.jpg");
+}
+
+.image-four {
+  background-image: url("https://static.pexels.com/photos/195633/pexels-photo-195633.jpeg");
+}
+
+.image-five {
+  background-image: url("https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg");
+}
